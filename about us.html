@@ -1,0 +1,220 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target); // Only animate once
+        }
+      });
+    }, { threshold: 0.1 });
+
+    // Select all scroll animation elements
+    document.querySelectorAll('.scroll-animate').forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href='home.html'><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href='home.html'>Home</a></li>
+                    <li><a href='product.html'>Products</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="about-contents">
+            <div class="about-title">
+                <span>More</span>
+                <h1 class="scroll-animate">About Us</h1>
+            </div>
+
+            <div class="about-intro">
+                <div class="intro-left scroll-animate scroll-left"></div>
+
+                <div class="intro-center scroll-animate scroll-left">
+                    <p>Khmer Organic Cooperative is a social enterprise, working along the whole 
+                    agricultural supply chain from farm gate to markets. In cooperation with all 
+                    stakeholders in green sector, especially farmers in the rural areas of Cambodia, KOC 
+                    brings fresh and high-quality organic produces to consumers and creates awareness of organic
+                     agriculture for better health, a better environment, and sustainable socio-economic development.</p>
+                </div>
+
+                <div class="intro-right scroll-animate scroll-right">
+                    <img src="images/pic-intro 1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="intro-quote">
+                <img src="images/quote image.png" alt="">
+
+                <div class="text-quote">
+                    <h1>"Nature knows best. Organic farming listens to the land, grows with care,
+                     and helps heal the Earth."</h1>
+                </div>
+            </div>
+
+            
+            <div class="breif-talk">
+                <div class="breif-top">
+                        <div class="breif-1 ex scroll-animate scroll-right">
+                            <img src="images/bre1.jpg" alt="">
+                        </div>`
+
+                        <div class="breif-2 scroll-animate scroll-right">
+                            <img src="images/bre2.png" alt="">
+                        </div>
+
+                        <div class="breif-1 scroll-animate scroll-right">
+                            <img src="images/bre3.jpg" alt="">
+                        </div>
+
+                        <div class="breif-3 scroll-animate scroll-right">
+                            <div class="top">
+                                <div class="box-left">
+                                    <h1>Our Beliefs</h1>
+                                </div>
+
+                                <div class="box-right"></div>
+                            </div>
+
+                            <div class="bottum">
+                                <h4>We can view ourselves as partners with our customers, our employees,
+                                our community, our farmers and our environment.</h4>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="breif-bottum">
+                    <div class="breif-a scroll-animate scroll-left"></div>
+                    
+                    <div class="breif-b scroll-animate scroll-left">
+                        <h1>Our Corporate Social Responsibility</h1>
+                        <p>Working together for sustainable agriculture and
+                         healthy and quality of life!</p>
+                    </div>
+
+                    <div class="breif-c scroll-animate scroll-left">
+                        <img src="images/bre4.jpeg" alt="">
+                    </div>
+
+                    <div class="breif-d scroll-animate scroll-left">
+                        <img src="images/bre5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="about-achive">
+            <div class="achive-title scroll-animate">
+                <h1>Moving Forward</h1>
+            </div>
+
+            
+            <div class="achive-top scroll-animate">
+                <div class="achive-box">
+                    <img src="images/s1.png" alt="">
+                </div>
+
+                <div class="achive-box">
+                    <h1>Monitor</h1>
+                    <p>Developing mechanism for monitoring and
+                     following up on CSR practices.</p>
+                </div>
+                
+                <div class="achive-box">
+                    <img src="images/s2.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="achive-bottum scroll-animate">
+                <div class="achive-box">
+                    <h1>Plan</h1>
+                    <p>Capacity-building to enable ourselves to develop management
+                     plans related to CSR practices and compliances</p>
+                </div>
+
+                <div class="achive-box">
+                    <img src="images/s3.png" alt="">
+                </div>
+                
+                <div class="achive-box">
+                    <h1>Certification</h1>
+                    <p>Support on documentation system in order to be able
+                     to apply for CSR certificates</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <div class="foot-left">
+                <div class="foot-logo">
+                    <a href='/home'><img src="images/logo.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="foot-center">
+                <div class="foot-contact">
+                    <h1>Contact Infor</h1>
+                    <p>#206, ST. 63, BKK1, PHNOM PENH
+                        <br><br>
+                        +855 77 299 953
+                        <br><br>
+                        info@khmer-organic.com
+                    </p>
+                    <br><br>
+                    <h1>Quick Links</h1>
+                    <p><a href="">Blog</a> <br><br>
+                    <a href="">Contact</a> <br><br>
+                    <a href='/product'>Our Products</a> <br><br>
+                    <a href="">About us</a> <br><br>
+                    Copyright © 2025 Khmer Organic</p>
+                </div>
+            </div>
+
+            <div class="foot-right">
+                <div class="contact-icon">
+                    <a href="https://web.facebook.com/khmerorganicshop?_rdc=1&_rdr#"><i class="fab fa-facebook"></i></a>
+                </div>
+
+                <div class="contact-icon">
+                    <a href="https://t.me/khmer_organic_shop"><i class="fab fa-telegram"></i></a>
+                </div>
+
+                <div class="contact-icon">
+                    <a href="https://www.instagram.com/khmer.organic/"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="contact-icon box1">
+                    <a href="https://www.youtube.com/channel/UC-VRUNxEg43xzImbgQTYPcw"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target); // Only animate once
+        }
+      });
+    }, { threshold: 0.1 });
+
+    // Select all scroll animation elements
+    document.querySelectorAll('.scroll-animate').forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href='home.html'><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href='home.html'>Home</a></li>
+                    <li><a href='product.html'>Products</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    <li><a href='contact'>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="products-items">
+            <div class="products-items-title">
+                <span>Our Organic</span>
+                <h1>Products</h1>
+                <p>At Khmer Organic Cooperative, it is not just about the premium organic products.
+                 We connect consumers to suppliers, and aim to raise more awareness in our community
+                 about the health benefits of healthy eating.</p>
+            </div>
+
+            <div class="items-contents-1">
+                <div class="items-top">
+                    <div class="top-left scroll-animate">
+                        <img src="images/pkar1.jpg" alt="">
+                    </div>
+
+
+                    <div class="top-center scroll-animate">
+                        <h1>Pka Tnoat</h1>
+
+                        <p>Cambodian palm sugar brings more to the table than just its distinctive taste.
+                         Minimal processing and a lower glycemic index (GI) means no added chemicals and higher
+                         levels of plant-based vitamins and minerals, making it perfect for a healthy lifestyle.
+                        <br><br>
+                        Cambodian palm sugar is a natural sweetener with a delicate aroma and caramel flavor. Minimally processed
+                         and free from added chemicals, it retains plant-based nutrients like manganese. With a low glycemic index,
+                         it helps prevent blood sugar spikes, making it a healthy choice for cooking and drinks.
+                        </p>
+                    </div>
+
+                    
+                    <div class="top-right scroll-animate">
+                        <img src="images/pkar2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="item-bottom">
+                    <div class="items-1 scroll-animate">
+                        <img src="images/honey1.jpg" alt="">
+                    </div>
+
+                    <div class="items-2">
+                        <h1>Wild Forest Honey</h1>
+                        <p>Mondulkiri Wild Forest Honey is honest honey. Our honey has no additives, is 100% Cambodian, follows HACCP
+                         & GMP standards, and is a protected Geographical Indication (GI) product harvested sustainably by local communities.</p>
+                    </div>
+
+                    <div class="items-1 scroll-animate">
+                        <img src="images/Cashew 2.jpg" alt="">
+                    </div>
+
+                    <div class="items-2 box1">
+                        <h1>Organic Cashews</h1>
+                        <p>Our organic cashews are grown out in the farms using certified fertilizers. Once the fruits are mature enough, our 
+                        farmers will pick them and send them over to the processing facilities which will later separate the nuts for consumption. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items-contents-2">
+                <div class="items-contents-2-title scroll-animate">
+                    <h1>Khmer Organic Pepper</h1>
+                </div>
+
+                <div class="items-contents-2-products">
+                    <div class="pepper scroll-animate">
+                        <img src="images/pepper1.jpg" alt="">
+                    </div>
+                    <div class="pepper scroll-animate">
+                        <img src="images/pepper 2.jpg" alt="">
+                    </div>
+                    <div class="pepper scroll-animate">
+                        <img src="images/pepper 3.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="items-contents-2-text">
+                    <span><i>A spice well-loved since ancient times, Kampot pepper has a heritage as rich as its pungent flavor. Carefully
+                     cultivated by local farmers, our Khmer Organic Pepper is sustainably grown without the usage of pesticides or herbicides.</i></span>
+                </div>
+
+                <div class="text-left">
+                    <p>Kampot pepper has a heritage as rich as its pungent flavor. Carefully cultivated by local farmers,
+                     our Khmer Organic Pepper is sustainably grown without the usage of pesticides or herbicides. Known for
+                     its deep taste and lasting intensity, black pepper is the strongest in flavor out of the many varieties. 
+                     A spice well-loved since ancient times, black pepper has established itself as a worldwide kitchen staple. </p>
+                </div>
+                <div class="text-right">
+                    <p>Black pepper is picked when it is not yet quite ripe. Cooked briefly in hot water and then allowed to dry out in the sun,
+                     enzymes in the berries cause its skin to become black during the drying process. Carrying a delicate aroma and notes of fresh
+                     grass and lime, it is perfect for spicing up any dish.</p>
+                </div>
+            </div>
+
+            <div class="items-contents-3">
+                <div class="items-3">
+                    <div class="items-contents-3-left scroll-animate">
+                        <img src="images/Cereal.jpg" alt="">
+                    </div>
+                    <div class="items-contents-3-right scroll-animate">
+                        <h1>Khmer Organic Cereal</h1>
+                        <p>In our cereal line we offer wide range of locally and without any synthetic
+                         fertilisers or pesticides grown products. In Khmer Organic Beans line, we offer four
+                         types – red, black, soy and mung beans. Each with their own benefits, beans are versatile in the
+                         kitchen and is a great addition to a daily healthy diet. We also offer black and white sesame seeds,
+                         basil seeds and ground peanuts. We continously try to expand our locally grown cereal offering and support
+                         local farmers who choose to grow sustainably.
+                        <br><br>
+                        All our products are selected for the highest quality in flavour, quality and nutrition. Selection, processing
+                         and packaging follow strict food health and safety standards.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="foot-left">
+                <div class="foot-logo">
+                    <a href='/home'><img src="images/logo.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="foot-center">
+                <div class="foot-contact">
+                    <h1>Contact Infor</h1>
+                    <p>#206, ST. 63, BKK1, PHNOM PENH
+                        <br><br>
+                        +855 77 299 953
+                        <br><br>
+                        info@khmer-organic.com
+                    </p>
+                    <br><br>
+                    <h1>Quick Links</h1>
+                    <p><a href="">Blog</a> <br><br>
+                    <a href="">Contact</a> <br><br>
+                    <a href='/product'>Our Products</a> <br><br>
+                    <a href="">About us</a> <br><br>
+                    Copyright © 2025 Khmer Organic</p>
+                </div>
+            </div>
+
+            <div class="foot-right">
+                <div class="contact-icon">
+                    <a href="https://web.facebook.com/khmerorganicshop?_rdc=1&_rdr#"><i class="fab fa-facebook"></i></a>
+                </div>
+
+                <div class="contact-icon">
+                    <a href="https://t.me/khmer_organic_shop"><i class="fab fa-telegram"></i></a>
+                </div>
+
+                <div class="contact-icon">
+                    <a href="https://www.instagram.com/khmer.organic/"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="contact-icon box1">
+                    <a href="https://www.youtube.com/channel/UC-VRUNxEg43xzImbgQTYPcw"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

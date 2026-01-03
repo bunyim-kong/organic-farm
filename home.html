@@ -1,0 +1,329 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target); // Only animate once
+        }
+      });
+    }, { threshold: 0.1 });
+
+    // Select all scroll animation elements
+    document.querySelectorAll('.scroll-animate').forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href='/home'><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href='/home'>Home</a></li>
+                    <li><a href='product.html'>Products</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="hero-img">
+                <img src="images/farm1.jpg" alt="">
+
+                <div class="head">
+                    <h1 class="scroll-animate"> ORGANIC FARMING</h1>
+                    <P class="scroll-animate">"Grow food with care, the organic way — for the Earth and every life it sustains."</P>
+                    <a href="about us.html"><button class="scroll-animate">LEARN MORE</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="intro">
+            <div class="intro-line scroll-animate scroll-left"></div>
+            <div class="intro-ques scroll-animate scroll-left"> 
+                <h2>A brief summary</h2>
+                <h1>ABOUT US</h1>
+            </div>
+            <div class="intro-ans scroll-animate scroll-right">
+                <p><b>Khmer Organic Cooperative was established in 2014.</b> 
+                <br><br>
+                We are working along the whole agricultural supply chain from the farm gate to market places.
+                Khmer Organic runs our businesses with a strong sense of responsibility and ethical values aligned 
+                with our corporate social responsibilities. 
+                <br><br>
+                All our products and services are focused on creating real quality. We work in close cooperation with
+                relevant smallholder farmers and other agricultural cooperatives.</p>
+
+                <a href="about us.html"><button>READ MORE</button></a>
+            </div>
+        </div>
+
+        <div class="service ">
+            <div class="content-title scroll-animate">
+                <span>This is why</span>
+                <h1>You should choose us</h1>
+                <p>On our site, we provide you a ton of benefit.
+                Our webpage promotes organic farming by sharing eco-friendly tips and connecting users to healthy, 
+                chemical-free food sources.
+                </p>
+            </div>
+
+
+            <div class="service-item scroll-animate">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="images/leaf.png" alt="">
+                    </div>
+                    <div class="item-text">
+                        <h1>Certified Organic</h1>
+                        <hr>
+                        <p>Our produce are grown free of synthetic additives like harmful pesticides,
+                            chemical fertilizers, and dyes.</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="item-img">
+                        <img src="images/quality.png" alt="">
+                    </div>
+                    
+                    <div class="item-text">
+                        <h1>Quality Services</h1>
+                        <hr>
+                        <p>Our trained staff is dedicated to delivering excellent service and ensuring every
+                         customer has a smooth, satisfying experience</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="item-img">
+                        <img src="images/location.png" alt="">
+                    </div>
+                    
+                    <div class="item-text">
+                        <h1>Locally Grown</h1>
+                        <hr>
+                        <p>Our organic products are grown in local communities. We follow strict organic rules to keep
+                             them healthy, fresh, and good for the environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="products">
+            <div class="product-title">
+                <h1>THE PRODUCTS</h1>
+            </div>
+
+            <div class="product-content">
+                <div class="product-item scroll-animate">
+                    <div class="product-img">
+                        <img src="images/honey1.jpg" alt="">
+
+                        <div class="price">
+                            <button>Popular</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-text">
+                        <h1>Wild Forest Honey</h1>
+                        <p>Mondulkiri Wild Forest Honey is honest honey. Our honey has no additives,
+                         is 100% Cambodian, collected and packaged by local communities.</p>
+                        <a href='/product'><span>READ MORE</span></a>
+                    </div>
+                </div>
+
+                <div class="product-item scroll-animate">
+                    <div class="product-img">
+                        <img src="images/pkar1.jpg" alt="">
+
+                        <div class="price">
+                            <button>Popular</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-text">
+                        <h1>Pka Tnoat</h1>
+                        <p>Cambodian palm sugar brings more to the table than just its distinctive taste. With no added
+                         chemicals it is perfect for a healthy lifestyle.</p>
+                        <a href='/product'><span>READ MORE</span></a>
+                    </div>
+                </div>
+
+                <div class="product-item scroll-animate">
+                    <div class="product-img">
+                        <img src="images/Cashew.jpg" alt="">
+
+                        <div class="price">
+                            <button>Popular</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-text">
+                        <h1>Khmer Organic Cashews</h1>
+                        <p>Our Khmer Organic Cashew are carefully handpicked, gently roasted and lightly seasoned,
+                         then packaged in a resealable container.</p>
+                        <a href='/product'><span>READ MORE</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extra">
+                <a href='/product'><h1>More Products</h1></a>
+            </div>
+        </div>
+
+
+        <div class="quote">
+            <img src="images/farm-2.png" alt="">
+            <div class="quote-text">
+                <p>"Organic farming is not just a way of growing food, 
+                    it's a way of caring for the Earth."</p>
+            </div>
+        </div>
+
+
+        <div class="puchase">
+            <span>Different Ways</span>
+            <h1>For Puchasing</h1>
+                <div class="puchase-way scroll-animate">
+                    <div class="pro-left">
+                        <div class="head-pro">
+                            <h1>Deliveries</h1>
+                            <p>The online way for you</p>
+                        </div>
+
+                        <div class="body-pro">
+                            <p>Your health and safety are important to us. We deliver carefully packed fresh fruits 
+                            and vegetables, as well as many other products, to your door for your convenience.
+                            <br><br>
+                            Chroy Changvar shop: 077 299 953
+                            <br><br>
+                            Beoung Keng Kang shop: 016 381 999
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="pro-right">
+                        <img src="images/a1.png" alt="">
+                    </div>
+                </div>
+
+
+                <div class="puchase-way scroll-animate">
+                    <div class="pro-left">
+                        <div class="head-pro">
+                            <h1>In-Store</h1>
+                            <p>This is our beanch</p>
+                        </div>
+
+                        <div class="body-pro">
+                            <p>Come give us a visit! We have two stores at the moment: one in Beoung Keng Kang and another 
+                            in Chroy Changvar. Both of our stores carefully follow health and safety.
+                            <br><br>
+                            Opening Hours:
+                            <br>
+                            <ul>
+                                <li>BKK – 7am to 7pm</li>
+                                <li>CCV – 7am to 6pm</li>
+                            </ul>
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="pro-right">
+                        <img src="images/store-3.jpg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="puchase-way scroll-animate">
+                    <div class="pro-left">
+                        <div class="head-pro">
+                            <h1>Our Partner</h1>
+                            <p>Another easy way for you.</p>
+                        </div>
+
+                        <div class="body-pro">
+                            <p>For your convenience, you can also find Khmer Organic products at our partner stores
+                             as well! These include Delievery Shop, Foodpanda and Khmum.
+                            <br>
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="pro-right">
+                        <img src="images/partner.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+
+
+        <div id="footer">
+            <div class="foot-left">
+                <div class="foot-logo">
+                    <a href='/home'><img src="images/logo.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="foot-center">
+                <div class="foot-contact">
+                    <h1>Contact Infor</h1>
+                    <p>#206, ST. 63, BKK1, PHNOM PENH
+                        <br><br>
+                        +855 77 299 953
+                        <br><br>
+                        info@khmer-organic.com
+                    </p>
+                    <br><br>
+                    <h1>Quick Links</h1>
+                    <p><a href="">Blog</a> <br><br>
+                    <a href="">Contact</a> <br><br>
+                    <a href='/product'>Our Products</a> <br><br>
+                    <a href="">About us</a> <br><br>
+                    Copyright © 2025 Khmer Organic</p>
+                </div>
+            </div>
+
+            <div class="foot-right">
+                <div class="contact-icon">
+                    <a href="https://web.facebook.com/khmerorganicshop?_rdc=1&_rdr#"><i class="fab fa-facebook"></i></a>
+                </div>
+
+                <div class="contact-icon">
+                    <a href="https://t.me/khmer_organic_shop"><i class="fab fa-telegram"></i></a>
+                </div>
+
+                <div class="contact-icon">
+                    <a href="https://www.instagram.com/khmer.organic/"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="contact-icon box1">
+                    <a href="https://www.youtube.com/channel/UC-VRUNxEg43xzImbgQTYPcw"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

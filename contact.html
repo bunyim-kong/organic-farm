@@ -1,0 +1,134 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target); //
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.scroll-animate').forEach(el => {
+      observer.observe(el);
+    });
+  });
+    </script>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href='home.html'><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href='home.html'>Home</a></li>
+                    <li><a href='product.html'>Products</a></li>
+                    <li><a href="about us.html">About</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="contact-item">
+            <div class="contact-title">
+                <span>Get in touch by</span>
+                <h1 class="scroll-animate">Contact Us</h1>
+            </div>
+
+            <div class="contact-contents">
+              <div class="contact scroll-animate scroll-left">
+                      <h2>Join our Community by</h2>
+                      <p>Keep yourself updated on fresh Khmer Organic news, stories from our farms,
+                        and other exclusive insights by subscribing to our weekly newsletter.</p>
+
+                      <form class="contact-form scroll-animate scroll-left">
+                        <input type="text" name="name" placeholder="Your Name">
+                        <input type="email" name="email" placeholder="Your Email" >
+                        <textarea name="message" placeholder="Write your message here..."></textarea>
+                        <button type="submit">Send</button>
+                      </form>
+                  </div>
+
+              <div class="contact-description">
+                  </div>
+                  
+                  <div class="contact-info scroll-animate scroll-left">
+                      <div class="contact-item">
+                          <span class="icon">📍</span>
+                          <span>#206, ST. 63, BKK1, PHNOM PENH</span>
+                      </div>
+
+                      <div class="contact-item">
+                          <span class="icon">📞</span>
+                          <span>+855 77 299 953</span>
+                      </div>
+
+                      <div class="contact-item">
+                          <span class="icon">✉️</span>
+                          <span>info@khmer-organic.com</span>
+                      </div>
+                  </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="foot-left">
+                <div class="foot-logo">
+                    <a href='/home'><img src="images/logo.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="foot-center">
+                <div class="foot-contact">
+                    <h1>Contact Infor</h1>
+                    <p>#206, ST. 63, BKK1, PHNOM PENH
+                        <br><br>
+                        +855 77 299 953
+                        <br><br>
+                        info@khmer-organic.com
+                    </p>
+                    <br><br>
+                    <h1>Quick Links</h1>
+                    <p><a href="">Blog</a> <br><br>
+                    <a href="">Contact</a> <br><br>
+                    <a href='/product'>Our Products</a> <br><br>
+                    <a href="">About us</a> <br><br>
+                    Copyright © 2025 Khmer Organic</p>
+                </div>
+            </div>
+
+            <div class="foot-right">
+                <div class="contact-icon">
+                    <a href="https://web.facebook.com/khmerorganicshop?_rdc=1&_rdr#"><i class="fab fa-facebook"></i></a>
+                </div>
+
+                <div class="contact-icon">
+                    <a href="https://t.me/khmer_organic_shop"><i class="fab fa-telegram"></i></a>
+                </div>
+
+                <div class="contact-icon">
+                    <a href="https://www.instagram.com/khmer.organic/"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="contact-icon box1">
+                    <a href="https://www.youtube.com/channel/UC-VRUNxEg43xzImbgQTYPcw"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
